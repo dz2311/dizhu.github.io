@@ -7,7 +7,7 @@
 <link href="css/materialize.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
+<body class="grey lighten-4">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
@@ -26,11 +26,11 @@
         <!-- Dropdown Structure -->
         <ul id='dropdown_menu' class='right dropdown-content' style="width:200px;">
         <li class="divider"></li>
-          <li><a href="#">About me</a></li>
+          <li><a href="#me_div">About me</a></li>
           <li class="divider"></li>
-          <li><a href="#">Professional Experience</a></li>
+          <li><a href="#exp_div">Professional Experience</a></li>
           <li class="divider"></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#projects_div">Projects</a></li>
         </ul>
       
     </div>
@@ -59,39 +59,42 @@
     </a>
     <ul class="slides">
       <li>
-        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <img src="img/bg.png">
+        <!-- <img src="img/slider1.png"> -->
         <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3>Hello, I am Di Zhu!</h3>
+          <h5 class="light">A creative, passionate and fast-learning developer.</h5>
+          <a class="slide_btn" href="mailto:dz2311@columbia.edu">Contact me!</a>
         </div>
       </li>
       <li>
-        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img src="img/bg.png">
         <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3>I am living in NYC now.</h3>
+          <h5 class="light right-align">I am a runner.</h5>
         </div>
       </li>
       <li>
-        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <img src="img/bg.png"> <!-- random image -->
         <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3>I am also a game lover!</h3>
+          <h5 class="light">I am a big fan of GTA series and AC series.</h>
+        </div>
+      </li>
+      <li>
+        <img src="img/bg.png">
+        <div class="caption center-align">
+          <h3>I am eager to learning new things!</h3>
+          <h5 class="light">You can find out that from my projects.</h5>
+          <a class="slide_btn" href="#projects_div" target="_top">Start</a>
         </div>
       </li>
     </ul>
   </div>
   <br>
   <h3 class="center-align collection-header" id="me_div"><i class="material-icons">perm_identity</i>About me</h3>
-  <ul class="collection">
-  <li class="collection-item">
+  <div class="divider"></div>
+  <!-- <li class="collection-item grey lighten-4" > -->
    <div class="container">
    <div class="row">
         <div class="col s12 m6 l6">
@@ -119,7 +122,7 @@
           <div class="divider"></div>
           <div class="section">
               <h5 class="collection-header">Columbia University</h5> 
-              <p class="resume-content">M.S in Computer Science.</p>
+              <p class="resume-content">M.S in Computer Science. (Pursuing)</p>
           </div>
           <div class="divider"></div>
           <div class="section">
@@ -146,20 +149,20 @@
         </div>
       </div>
     </div>
-  </li>
-  </ul>
+<!--   </li> -->
+ 
   <br>
   <h3 class="center-align collection-header" id="exp_div"><i class="material-icons">work</i>Professional Experience</h3>
-  <ul class="collection">
-  <li class="collection-item">
+  <div class="divider"></div>
+  
    <div class="container">
      <div class="section">
-        <h5 class="collection-header">Angel Intelligence Group, New York, front-end development intern</h5> 
+        <h5 class="collection-header">Angel Intelligence Group, New York, Front-end Development Intern</h5> 
         <p class="resume-content">June. 2016 - August. 2016</p>
       </div>
       <div class="divider"></div>
       <div class="section">
-        <h5 class="collection-header">Prime Health Company, Beijing, summer intern</h5> 
+        <h5 class="collection-header">Prime Health Company, Beijing, Summer Intern</h5> 
         <p class="resume-content">July. 2014 - September. 2014</p>
         <p>• Participated in the development of an Android application, which helps patients make appointments with doctors as well as provides instructions for diseases.
         </p>
@@ -175,13 +178,13 @@
         <p>• Analyzed the needs of various background people, and designed several me-thods to meet their demands.</p>
       </div>
   </div>
-  </li>
-  </ul>
+  
+
   <br>
   <h3 class="center-align collection-header" id="projects_div"><i class="material-icons">class</i>Projects</h3>
+  <div class="divider"></div>
  <!--  1st row -->
-  <ul class="collection">
-  <li class="collection-item">
+  
    <div class="container">
     <div class="row">
      <div class="col s12 m6 l6">
@@ -193,8 +196,8 @@
             <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Manhattan Traffic View</span>
             <div class="chips">
             Tags:
-              <div class="chip light-blue lighten-1">Javascript</div>
               <div class="chip light-blue lighten-1">Python + Django Framework</div>
+              <div class="chip light-blue lighten-1">Javascript</div>
             </div>
             <div class="divider"></div>
             <p class="card-action">
@@ -220,8 +223,8 @@
             <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Twitter Map</span>
             <div class="chips">
             Tags:
-              <div class="chip light-blue lighten-1">Javascript</div>
               <div class="chip light-blue lighten-1">Python + Flask Framework</div>
+              <div class="chip light-blue lighten-1">Javascript</div>
             </div>
             <div class="divider"></div>
             <p class="card-action">
@@ -313,7 +316,7 @@
           <img class="activator" src="img/portfolio.png">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Undergraduates projects portfolio</span>
+            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Undergraduates Projects Portfolio</span>
             <div class="chips">
             Tags:
               <div class="chip light-blue lighten-1">HTML</div>
@@ -333,27 +336,27 @@
      </div>
      </div>
   </div>
-  </li>
-  </ul>
+
+
 
   </div>
   </li>
-  </ul>
+ 
 
  <footer class="page-footer light-blue lighten-1">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Thanks for visiting my page!</h5>
+                <p class="grey-text text-lighten-4">If you have some positions that fit me, please contact me!</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Connect socially with Di</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/di.zhu.102">facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cudizhu">Linkedin</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/dz2311">Github</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:dz2311@columbia.edu">Email</a></li>
                 </ul>
               </div>
             </div>

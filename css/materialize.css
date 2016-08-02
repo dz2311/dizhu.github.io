@@ -2963,7 +2963,7 @@ ul.staggered-list li {
 @media only screen and (max-width: 992px) {
   .show-on-medium-and-down {
     display: block !important;
-  }
+  } 
 }
 
 @media only screen and (max-width: 600px) {
@@ -2985,7 +2985,9 @@ footer.page-footer .footer-copyright {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
 }
-
+footer.page-footer a:hover{
+  color:#424242 !important;
+}
 table, th, td {
   border: none;
 }
@@ -4680,6 +4682,10 @@ small {
   display: block;
 }
 
+.card-action img:hover {
+  background-color: #bdbdbd;
+  transition-delay: 0.3s;
+}
 #toast-container {
   display: block;
   position: fixed;
@@ -7378,7 +7384,7 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 1;
   width: 100%;
   height: inherit;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .slider .slides li img {
@@ -7389,13 +7395,57 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .slides li .caption {
-  color: #fff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  -webkit-text-fill-color: #29b6f6;
   position: absolute;
   top: 15%;
   left: 15%;
   width: 70%;
   opacity: 0;
 }
+
+.slider .slides li .caption a.slide_btn {
+  margin-top: 10px;
+  /*-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);*/
+  background-color:#ffffff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:2px solid #29b6f6;
+  display:inline-block;
+  cursor:pointer;
+  color:#29b6f6;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  font-size:15px;
+  font-weight:bold;
+  padding:9px 24px;
+  text-decoration:none;
+  /*text-shadow:0px 1px 0px #ffffff;*/
+}
+.slider .slides li .caption a.slide_btn:hover {
+  /*background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);*/
+  background-color:#29b6f6;
+  color:#ffffff;
+}
+/*.slider .slides li .slider-btn:active {
+  position:relative;
+  top:1px;
+}*/
 
 .slider .slides li .caption p {
   color: #e0e0e0;
@@ -8250,4 +8300,55 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  min-width: 800px;
+  margin: 0 0;
+}
+
+.columns {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 2;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-count: 2;
+  column-gap: 15px;
+  column-fill: auto;
+}
+
+.pin {
+  display: inline-block;
+  background: #FEFEFE;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  padding: 15px;
+  padding-bottom: 5px;
+  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+  opacity: 1;
+  
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+.columns:hover .pin:not(:hover) {
+  opacity: 0.4;
+}
 }
