@@ -4683,8 +4683,12 @@ small {
 }
 
 .card-action img:hover {
-  background-color: #bdbdbd;
-  transition-delay: 0.3s;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 16px;
 }
 #toast-container {
   display: block;
@@ -8302,53 +8306,65 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   }
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1280px;
-  min-width: 800px;
-  margin: 0 0;
+/**
+* The pinterest style
+*/
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
 }
 
-.columns {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  -webkit-column-fill: auto;
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
-  -moz-column-fill: auto;
-  column-count: 2;
-  column-gap: 15px;
-  column-fill: auto;
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
 }
 
-.pin {
-  display: inline-block;
-  background: #FEFEFE;
-  border: 2px solid #FAFAFA;
-  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  margin: 0 2px 15px;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  column-break-inside: avoid;
-  padding: 15px;
-  padding-bottom: 5px;
-  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
-  opacity: 1;
-  
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-    .columns {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-
-.columns:hover .pin:not(:hover) {
-  opacity: 0.4;
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
 }
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
