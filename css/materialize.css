@@ -4623,6 +4623,7 @@ small {
   color: inherit;
 }
 
+
 .card .card-content .card-title {
   line-height: 48px;
 }
@@ -4633,6 +4634,14 @@ small {
   border-top: 1px solid rgba(160, 160, 160, 0.2);
   padding: 20px;
   z-index: 2;
+}
+
+.card .card-action a:hover {
+  opacity: 0.5;
+  -moz-transition: all 0.3s ease-out;    /* FF4+ */
+  -o-transition: all 0.3s ease-out;      /* Opera 10.5+ */
+  -webkit-transition: all 0.3s ease-out; /* Safari 3.2+, Chrome */
+  -ms-transition: all 0.3s ease-out;     /* IE10+ */
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
@@ -4656,20 +4665,22 @@ small {
   position: absolute;
   background-color: #fff;
   width: 100%;
-  overflow-y: auto;
-  top: 100%;
+  top: 0;
   height: 100%;
-  z-index: 100;
+  z-index: 3;
   display: none;
+  overflow-y: scroll;
 }
 
 .card .card-reveal .card-title {
   cursor: pointer;
   display: block;
 }
-.card .card-reveal p {
-  z-index: 3;
-}
+.card .card-content .card-title i{
+   font-size: 2rem;
+   line-height: 48px;
+ }
+
 #toast-container {
   display: block;
   position: fixed;
@@ -7383,7 +7394,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 .slider .slides li .caption {
   font-family: "Comic Sans MS", cursive, sans-serif;
+  text-fill-color: #29b6f6;
   -webkit-text-fill-color: #29b6f6;
+  -moz-text-fill-color: #29b6f6;
+  -ms-text-fill-color: #29b6f6;
   position: absolute;
   top: 15%;
   left: 15%;
@@ -7424,7 +7438,15 @@ input[type=range]:focus::-ms-fill-upper {
 }*/
 
 .slider .slides li .caption p {
-  color: #e0e0e0;
+  color:#29b6f6;
+}
+
+.slider .slides li .caption h3 {
+   color:#29b6f6;
+}
+
+.slider .slides li .caption h5 {
+   color:#29b6f6;
 }
 
 .slider .slides li.active {
@@ -7453,7 +7475,11 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #29b6f6;
+  border-width: 2px;
+
 }
 .slider .slider-left-arrow {
   display: none;
@@ -8319,6 +8345,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item .row {
+  margin-bottom: -10px;
+  padding: 10px;
+}
+.item .row .card {
+
 }
 
 .item:hover {
