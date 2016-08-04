@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Di Zhu's Personal Page</title>
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/materialize.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="grey lighten-4">
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<!-- navigation bar -->
+<nav>
+    <div class="nav-wrapper light-blue lighten-1" id="navigation_div">
+      <a href="#" class="brand-logo">Di's Homepage</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#me_div">About me</a></li>
+        <li><a href="#exp_div">Professional Experience</a></li>
+        <li><a href="#projects_div">Projects</a></li>
+      </ul>
+      <!-- show drop down button on small or medium screen -->
+      <!-- Dropdown Trigger -->
+      <a class='right hide-on-large-only dropdown-button light-blue lighten-1' href='#' data-activates='dropdown_menu'><i class="material-icons" style="margin-right:20px;">reorder</i></a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown_menu' class='right dropdown-content' style="width:200px;">
+        <li class="divider"></li>
+          <li><a href="#me_div">About me</a></li>
+          <li class="divider"></li>
+          <li><a href="#exp_div">Professional Experience</a></li>
+          <li class="divider"></li>
+          <li><a href="#projects_div">Projects</a></li>
+        </ul>
+      
+    </div>
+  </nav>
+  
+  
+  <!-- fixed position button -->
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large light-blue lighten-1">
+      <i class="large material-icons">navigation</i>
+    </a>
+    <ul>
+      <li><a href="#projects_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="Projects"><i class="material-icons">class</i></a></li>
+      <li><a href="#exp_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="Professional Experience"><i class="material-icons">work</i></a></li>
+      <li><a href="#me_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="About me"><i class="material-icons">perm_identity</i></a></li>
+      <li><a href="#navigation_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="Top"><i class="material-icons">publish</i></a></li>
+    </ul>
+  </div>
+  <!--  slider -->
+  <div class="slider">
+    <a class="waves-effect waves-light slider-left-arrow">
+      <i class="material-icons medium">keyboard_arrow_left</i>
+    </a>
+    <a class="waves-effect waves-light slider-right-arrow">
+      <i class="material-icons medium">keyboard_arrow_right</i>
+    </a>
+    <ul class="slides">
+      <li>
+        <img src="img/bg.png">
+        <!-- <img src="img/slider1.png"> -->
+        <div class="caption center-align">
+          <h3>Hello, I am Di Zhu!</h3>
+          <h5 class="light">A creative, passionate and fast-learning developer.</h5>
+          <a class="slide_btn" href="mailto:dz2311@columbia.edu">Contact me!</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/bg.png">
+        <div class="caption right-align">
+          <h3>I am living in NYC now.</h3>
+          <h5 class="light right-align">I am a game lover - I am a big fan of GTA series and AC series. I am also a runner.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/bg.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>I am a good problem solver!</h3>
+          <h5 class="light">In front-end developing, there might be multiple ways to solve a problem: css/html/javascript. And I am eager to explore more. </h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/bg.png">
+        <div class="caption center-align">
+          <h3>I am eager to learning new things!</h3>
+          <h5 class="light">And you can find out that from my projects.</h5>
+          <a class="slide_btn" href="#projects_div" target="_top">Start</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <h3 class="center-align collection-header" id="me_div"><i class="material-icons">perm_identity</i>About me</h3>
+  <div class="divider"></div>
+  <!-- <li class="collection-item grey lighten-4" > -->
+   <div class="container">
+   <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/di.jpg">
+              <span class="card-title">Hello! I am Di Zhu</span>
+            </div>
+            <div class="card-content">
+              <p>I am a person who loves novel things and is eager to learn new things. I am very interested in front-end development and I am seeking for a full-time job in this area right now.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/dz2311"><img src="img/github.png" style="width:32px;height:32px;"></a>
+              <a href="https://www.facebook.com/di.zhu.102"><img src="img/facebook.png" style="width:32px;height:32px;"></a>
+              <a href="https://www.linkedin.com/in/cudizhu"><img src="img/linkedin.png" style="width:32px;height:32px;"></a>
+              <a href="mailto:dz2311@columbia.edu" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Email: dz2311@columbia.edu"><img src="img/message.png" style="width:32px;height:32px;"></a>
+              <a href="" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Skype: zhudi0907@hotmail.com"><img src="img/skype.png" style="width:32px;height:32px;"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <h4 class="collection-header">Education</h4>
+          <div class="divider"></div>
+          <div class="section">
+              <h5 class="collection-header">Columbia University</h5> 
+              <p class="resume-content">M.S in Computer Science. (Expected Dec.2016)</p>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+              <h5 class="collection-header">Beijing University of Posts and Telecoms</h5> 
+              <p class="resume-content">B.Eng. in Information Engineering.</p>
+          </div> 
+          <div class="divider"></div>
+          <h4 class="collection-header">Skills</h4>
+        </div>
+        <div class="chips">
+          <div class="chip light-blue lighten-1">Javascript</div>
+          <div class="chip light-blue lighten-1">Ajax</div>
+          <div class="chip light-blue lighten-1">jQuery</div>
+          <div class="chip light-blue lighten-1">HTML</div>
+          <div class="chip light-blue lighten-1">CSS</div>
+          <div class="chip light-green lighten-1">Java</div>
+          <div class="chip light-green lighten-1">C</div>
+          <div class="chip light-green lighten-1">C++</div>
+          <div class="chip light-green lighten-1">C#</div>
+          <div class="chip light-green lighten-1">Unity</div>
+          <div class="chip grey lighten-1">MySQL</div>
+          <div class="chip grey lighten-1">Elasticsearch</div>
+          <div class="chip grey lighten-1">AWS</div>
+        </div>
+      </div>
+    </div>
+<!--   </li> -->
+ 
+  <br>
+  <h3 class="center-align collection-header" id="exp_div"><i class="material-icons">work</i>Professional Experience</h3>
+  <div class="divider"></div>
+  
+   <div class="container">
+     <div class="section">
+        <h5 class="collection-header">Angel Intelligence Group, New York, Front-end Development Intern</h5> 
+        <p class="resume-content">June. 2016 - August. 2016</p>
+        <p>• Participating in the development of a web application, which gives users recommendations when they are shopping for clothes.
+        </p>
+        <p>• Developping the stylist chatbox of the application.</p>
+        <p>• Solved communication problems between the parent window and the iframe window, and also implemented an effective way to resize the iframe.</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h5 class="collection-header">Prime Health Company, Beijing, Summer Intern</h5> 
+        <p class="resume-content">July. 2014 - September. 2014</p>
+        <p>• Participated in the development of an Android application, which helps patients make appointments with doctors as well as provides instructions for diseases.
+        </p>
+        <p>• Developed the user interface of the application.</p>
+        <p>• Proposed ideas to improve user experience.</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h5 class="collection-header">Third Prize of the Undergraduate E-commerce Contest in Beijing (Team Leader)</h5> 
+        <p class="resume-content">December. 2013</p>
+        <p>• Constructed the general frame for the E-commerce website wepet.com.</p>
+        <p>• Designed a marketing plan which comprises a series of activities for online shopping and communication among pet keepers.</p>
+        <p>• Analyzed the needs of various background people, and designed several me-thods to meet their demands.</p>
+      </div>
+  </div>
+  
+
+  <br>
+  <h3 class="center-align collection-header" id="projects_div"><i class="material-icons">class</i>Projects</h3>
+  <div class="divider"></div>
+  <div class="container">
+    <div class="masonry">
+        <div class="item">
+           <div class="row">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/stylewingman.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Style Wingman App</span>
+              <div class="chips">
+              Tags:
+                <div class="chip light-blue lighten-1">Shopify</div>
+                <div class="chip light-blue lighten-1">HTML</div>
+                <div class="chip light-blue lighten-1">CSS</div>
+                <div class="chip light-blue lighten-1">Javascript</div>
+                <div class="chip light-blue lighten-1">Ruby on Rails</div>
+                <div class="chip light-blue lighten-1">Bootstrap</div>
+                <div class="chip light-blue lighten-1">Materialize</div>
+              </div>
+            </div> <!-- content -->
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Style Wingman App -- Summer intern as a front-end engineer</span>
+              <p>• Participated in the development of a web application, which gives users recommendations when they are shopping for clothes.
+              </p>
+              <p>• Developed the stylist chatbox of the application.</p>
+              <p>• Solved communication problems between the parent window and the iframe window, and also implemented an effective way to resize the iframe.</p>
+              <br>
+              <p>For more details, please see our demo website.</p>
+              <a href="https://style-wingman-2.myshopify.com/products/flocked-cotton-jersey-sweatshirt">Click here!</a>
+            </div>
+            <div class="card-action">
+              <a href="https://www.youtube.com/watch?v=1dLsYYcVkfM&feature=youtu.be"><img src="img/youtube.png" style="width:32px;height:32px;"></a>
+              <a href="https://github.com/dgreenfi/TrafficView"><img src="img/github.png" style="width:32px;height:32px;"></a>
+          </div> <!-- card-action -->
+        </div> <!-- card -->
+        </div> <!-- row -->
+      </div> <!-- item -->
+          <div class="item">
+           <div class="row">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/CloudFinal.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Manhattan Traffic View</span>
+              <div class="chips">
+              Tags:
+                <div class="chip light-blue lighten-1">Python + Django Framework</div>
+                <div class="chip light-blue lighten-1">Javascript</div>
+              </div>
+            </div> <!-- content -->
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Manhattan Traffic View -- Final project of class "Cloud Computing and Big Data Analysis"</span>
+              <p>• Constructed the front-end of the website, rendered all the camares of Manhattan on Google map.</p>
+              <p>• Added event handler to each camera so that the user can see the road map of each camera.</p>
+              <p>• Applied Google API to recommend route and displayed cameras along the route.</p>
+              <p>• Optimized the javascript code to reduce the times of sending request to the backend.</p>
+            </div>
+            
+              <div class="card-action">
+                <a href="https://www.youtube.com/watch?v=1dLsYYcVkfM&feature=youtu.be"><img src="img/youtube.png" style="width:32px;height:32px;"></a>
+                <a href="https://github.com/dgreenfi/TrafficView"><img src="img/github.png" style="width:32px;height:32px;"></a>
+            </div> <!-- card-action -->
+          </div> <!-- card -->
+        </div> <!-- row -->
+        </div> <!-- item -->
+          <div class="item">
+           <div class="row">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/twittermap.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Twitter Map</span>
+              <div class="chips">
+                Tags:
+                <div class="chip light-blue lighten-1">Python + Flask Framework</div>
+                <div class="chip light-blue lighten-1">Javascript</div>
+              </div>
+            </div> <!-- card-content -->
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Twitter Map -- project of Class "Cloud Computing and Big Data Analysis"</span>
+              <p>• Used AWS (including EC2, Elasticsearch, S3 and Elastic Beanstalk) and implemented a real-time user activity map by Twitter API and Google Map API.</p>
+              <p>• Constructed the general frame, developed the website using HTML5 and JavaScript and connected the website with backend by Python and Flask framework.</p>
+            </div>
+            <div class="card-action">
+                <a href="https://github.com/dz2311/CloudTweetMap"><img src="img/github.png" style="width:32px;height:32px;"></a>
+            </div>
+          </div> <!-- card -->
+          </div>
+          </div>
+     <!--2nd row-->
+          <div class="item">
+           <div class="row">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/bowling.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Super Bowling Game</span>
+              <div class="chips">
+              Tags:
+                <div class="chip light-green lighten-1">C#</div>
+                <div class="chip light-green lighten-1">Unity</div>
+              </div>
+            </div> <!-- card-content -->
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Super Bowling Game -- Final project of class "3D UI and Augmented Reality"</span>
+              <p>• Implemented mini maps and algorithm for guiding the user to hit the nearest bowling pin.</p>
+              <p>• Implemented the score board to record the highest grade of users under different mode with different difficulty.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/dailinshen/Super-Bowling-UI"><img src="img/github.png" style="width:32px; height:32px;"></a>
+            </div>
+          </div><!-- card -->
+          </div> <!-- item -->
+          </div>
+        <div class="item">
+         <div class="row">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/pr2.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>PR2 Simulation</span>
+              <div class="chips">
+              Tags:
+                <div class="chip light-green lighten-1">C++</div>
+                <div class="chip light-green lighten-1">ROS</div>
+                <div class="chip light-green lighten-1">Gazebo</div>
+              </div>
+            </div><!-- card-content -->
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>PR2 Simulation on Gazebo -- Final project of class "Humanoid Robotics"</span>
+              <p>• Implemented Bezier curve algorithm for simulating curves so that the robot can use less data while drawing curves.</p>
+              <p>• Wrote a program to read the the simulation data from disk and saved the result of the robot's hand trajectory into disk.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/dz2311/pr2_example_ws"><img src="img/github.png" style="width:32px;height:32px;"></a>
+            </div>
+          </div> <!-- card -->
+        </div> <!-- item -->
+        </div>
+    
+        <div class="item">
+         <div class="row">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/bunny.png">
+            </div>
+            <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Computer Graphics</span>
+            <div class="chips">
+            Tags:
+              <div class="chip light-green lighten-1">C++</div>
+              <div class="chip light-green lighten-1">OpenGL</div>
+              <div class="chip light-green lighten-1">OpenEXR</div>
+            </div>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Computer Graphics -- Porjects</span>
+            <p>• Basic ways to do ray tracer, and bounding box implementation.  <a href="https://github.com/dz2311/RayTracer">https://github.com/dz2311/RayTracer</a></p>
+            <p>• For openGL pipeline rendering, please click the "github" icon.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/dz2311/CG_OpenGL_renderOBJ"><img src="img/github.png" style="width:32px; height:32px;"></a>
+          </div>
+        </div> <!-- card -->
+     </div> <!-- item -->
+     </div>
+     <div class="item">
+      <div class="row">
+       <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/portfolio.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i>Undergraduates Projects Portfolio</span>
+            <div class="chips">
+            Tags:
+              <div class="chip light-blue lighten-1">HTML</div>
+              <div class="chip light-blue lighten-1">Mobile UI</div>
+              <div class="chip light-blue lighten-1">Photographs</div>
+            </div>
+         </div>
+         <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Undergraduates projects portfolio</span>
+            <p>• Implemented Bezier curve algorithm for simulating curves so that the robot can use less data while drawing curves.</p>
+            <p>• Wrote a program to read the the simulation data from disk and saved the result of the robot's hand trajectory into disk.</p>
+         </div>
+         <div class="card-action">
+          <a href="https://drive.google.com/file/d/0B8X_Gx7dk9-fMEpzQlVZVklFQ3c/view?usp=sharing"><img src="img/drive.png" style="width:32px;height:32px;"></a><a href="https://drive.google.com/uc?authuser=0&id=0B8X_Gx7dk9-fMEpzQlVZVklFQ3c&export=download"><img src="img/download.png" style="width:32px;height:32px;"></a>
+         </div>
+        </div> <!-- card -->
+        </div>
+     </div> <!-- item -->
+  </div> <!-- masonry -->
+  </div> <!-- container -->
+
+<!--   </div> -->
+  <!-- </li> -->
+ 
+
+ <footer class="page-footer light-blue lighten-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Thanks for visiting my page!</h5>
+                <p class="grey-text text-lighten-4">If you have some positions that fit me, please contact me!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Connect socially with Di</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/di.zhu.102">facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cudizhu">Linkedin</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/dz2311">Github</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:dz2311@columbia.edu">Email</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright light-blue lighten-2">
+            <div class="container">
+            © Di Zhu 2016 - New York City, NY, 10025. 
+            <a class="grey-text text-lighten-4 right" href="mailto:dz2311@columbia.edu">Email: dz2311@columbia.edu</a>
+            </div>
+          </div>
+        </footer>  
+</body>
+</html>
