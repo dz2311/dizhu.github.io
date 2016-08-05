@@ -4133,7 +4133,9 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  -webkit-font-family: "Comic Sans MS", cursive, sans-serif;
+  -moz-font-family: "Comic Sans MS", cursive, sans-serif;
+  -ms-font-family: "Comic Sans MS", cursive, sans-serif;
   position: absolute;
   color: #fff;
   display: inline-block;
@@ -7393,7 +7395,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .slides li .caption {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  -webkit-font-family: "Comic Sans MS", cursive, sans-serif;
+  -moz-font-family: "Comic Sans MS", cursive, sans-serif;
+  -ms-font-family: "Comic Sans MS", cursive, sans-serif;
   text-fill-color: #29b6f6;
   -webkit-text-fill-color: #29b6f6;
   -moz-text-fill-color: #29b6f6;
@@ -7508,7 +7512,9 @@ input[type=range]:focus::-ms-fill-upper {
   padding-top: 5px;
 }
 h3.collection-header {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  -webkit-font-family: "Comic Sans MS", cursive, sans-serif;
+  -moz-font-family: "Comic Sans MS", cursive, sans-serif;
+  -ms-font-family: "Comic Sans MS", cursive, sans-serif;
 }
 h3.collection-header > i.material-icons {
   font-size: 2.92rem;
