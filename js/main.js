@@ -10,8 +10,8 @@ $(document).ready(function(){
     $('.collapsible').collapsible({
       accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
-    $('.fixed-action-btn').on("tap", function(){
-      if($(this).hasClass('active'))
-        closeFABMenu($(this));
+    $('body').on("tap", function(){
+      if($('fixed-action-btn').hasClass('active'))
+        closeFABMenu($('fixed-action-btn'));
     })
 });
