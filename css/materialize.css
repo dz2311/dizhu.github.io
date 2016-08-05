@@ -4096,7 +4096,7 @@ nav {
 
 nav a {
   color: #fff;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Georgia, serif;
 }
 
 nav i,
@@ -4133,9 +4133,7 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
-  -webkit-font-family: "Comic Sans MS", cursive, sans-serif;
-  -moz-font-family: "Comic Sans MS", cursive, sans-serif;
-  -ms-font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Georgia, serif;
   position: absolute;
   color: #fff;
   display: inline-block;
@@ -7395,9 +7393,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .slider .slides li .caption {
-  -webkit-font-family: "Comic Sans MS", cursive, sans-serif;
-  -moz-font-family: "Comic Sans MS", cursive, sans-serif;
-  -ms-font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Georgia, serif;
   text-fill-color: #29b6f6;
   -webkit-text-fill-color: #29b6f6;
   -moz-text-fill-color: #29b6f6;
@@ -7419,7 +7415,7 @@ input[type=range]:focus::-ms-fill-upper {
   border:2px solid #29b6f6;
   display:inline-block;
   color:#29b6f6;
-  font-family:"Comic Sans MS", cursive, sans-serif;
+  font-family:Georgia, serif;
   font-size:15px;
   font-weight:bold;
   padding:9px 24px;
@@ -7512,9 +7508,7 @@ input[type=range]:focus::-ms-fill-upper {
   padding-top: 5px;
 }
 h3.collection-header {
-  -webkit-font-family: "Comic Sans MS", cursive, sans-serif;
-  -moz-font-family: "Comic Sans MS", cursive, sans-serif;
-  -ms-font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Georgia, serif;
 }
 h3.collection-header > i.material-icons {
   font-size: 2.92rem;
