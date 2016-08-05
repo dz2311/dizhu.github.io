@@ -3670,7 +3670,6 @@ $(document).ready(function(){
         openFABMenu($menu);
       }
     });
-
   });
 
   $.fn.extend({
