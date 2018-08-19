@@ -12,85 +12,24 @@
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <!-- navigation bar -->
-<nav>
-    <div class="nav-wrapper light-blue lighten-1" id="navigation_div">
-      <a href="#" class="brand-logo">Di's Homepage</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#me_div">About me</a></li>
-        <li><a href="#exp_div">Professional Experience</a></li>
-        <li><a href="#projects_div">Past Projects</a></li>
-      </ul>
-      <!-- show drop down button on small or medium screen -->
-      <!-- Dropdown Trigger -->
-      <a class='right hide-on-large-only dropdown-button light-blue lighten-1' href='#' data-activates='dropdown_menu'><i class="material-icons" style="margin-right:20px;">reorder</i></a>
-        <!-- Dropdown Structure -->
-        <ul id='dropdown_menu' class='right dropdown-content' style="width:200px;">
-        <li class="divider"></li>
-          <li><a href="#me_div">About me</a></li>
-          <li class="divider"></li>
-          <li><a href="#exp_div">Professional Experience</a></li>
-          <li class="divider"></li>
-          <li><a href="#projects_div">Past Projects</a></li>
-        </ul>
-      
+<div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="nav-main-container">
+          <a><img class="nav-icon" class="icon" src="img/snapcode.png"></a>
+          <a class="nav-content-color">Di Zhu</a>
+        </div>
+        <div class="nav-button-container">
+          <ul class="right hide-on-med-and-down nav-menu">
+            <li><a class="nav-content-color" href="#me_div">About</a></li>
+            <li><a class="nav-content-color" href="#experience">Experience</a></li>
+            <li><a class="nav-content-color" href="#past_projects">Past projects</a></li>
+          </ul>
+        </div>
     </div>
   </nav>
-  
-  
-  <!-- fixed position button -->
-  <div class="fixed-action-btn hide-on-med-and-down" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large light-blue lighten-1">
-      <i class="large material-icons">navigation</i>
-    </a>
-    <ul>
-      <li><a href="#projects_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="Past Projects"><i class="material-icons">class</i></a></li>
-      <li><a href="#exp_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="Professional Experience"><i class="material-icons">work</i></a></li>
-      <li><a href="#me_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="About me"><i class="material-icons">perm_identity</i></a></li>
-      <li><a href="#navigation_div" class="btn-floating tooltipped light-blue lighten-1" data-position="left" data-delay="50" data-tooltip="Top"><i class="material-icons">publish</i></a></li>
-    </ul>
-  </div>
-  <!--  slider -->
-  <div class="slider">
-    <a class="waves-effect waves-light slider-left-arrow">
-      <i class="material-icons medium">keyboard_arrow_left</i>
-    </a>
-    <a class="waves-effect waves-light slider-right-arrow">
-      <i class="material-icons medium">keyboard_arrow_right</i>
-    </a>
-    <ul class="slides">
-      <li>
-        <img src="img/bg.png">
-        <!-- <img src="img/slider1.png"> -->
-        <div class="caption center-align">
-          <h3>Hello, I am Di Zhu!</h3>
-          <h5 class="light">A creative, passionate and fast-learning software engineer.</h5>
-          <a class="slide_btn" href="mailto:dz2311@columbia.edu">Contact me</a>
-        </div>
-      </li>
-      <li>
-        <img src="img/bg.png">
-        <div class="caption right-align">
-          <h3>I am living in LA now.</h3>
-          <h5 class="light right-align">I am a game lover - I am a big fan of GTA series and AC series. I am also a runner.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/bg.png"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>I am a good problem solver!</h3>
-          <h5 class="light">I like to think thouroughly, pay attention to details and work efficiently during work.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="img/bg.png">
-        <div class="caption center-align">
-          <h3>I am eager to learning new things!</h3>
-          <h5 class="light">I have a good memory and I can learn super fast from hands-on projects. Have a look at my past school projects, you'll believe me! :)</h5>
-          <a class="slide_btn" href="#projects_div" target="_top">Start</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+</div>
   <br>
   <h3 class="center-align collection-header" id="me_div"><i class="material-icons">perm_identity</i>About me</h3>
   <div class="divider"></div>
@@ -104,7 +43,7 @@
               <span class="card-title">Hello! I am Di Zhu</span>
             </div>
             <div class="card-content">
-              <p>I am a person who loves novel things and is eager to learn new things. I am a software engineer and I am working at Snapchat now.</p>
+              <p>I am a person who loves novel things and is eager to learn new things. I am a software engineer and working at Snapchat now.</p>
             </div>
             <div class="card-action">
               <a href="https://github.com/dz2311"><img src="img/github.png" style="width:32px;height:32px;"></a>
@@ -120,7 +59,7 @@
           <div class="divider"></div>
           <div class="section">
               <h5 class="collection-header">Columbia University</h5> 
-              <p class="resume-content">M.S in Computer Science. (Expected Dec.2016)</p>
+              <p class="resume-content">M.S in Computer Science.</p>
           </div>
           <div class="divider"></div>
           <div class="section">
@@ -148,14 +87,14 @@
 <!--   </li> -->
  
   <br>
-  <h3 class="center-align collection-header" id="exp_div"><i class="material-icons">work</i>Professional Experience</h3>
+  <h3 class="center-align collection-header" id="experience"><i class="material-icons">work</i>Experience</h3>
   <div class="divider"></div>
   
    <div class="container">
     <div class="section">
-      <h5 class="collection-header">Software Engineer, Camera Platform team, Snap. Inc</h5> 
+      <h5 class="collection-header">Software Engineer @ Camera Platform, Snap. Inc</h5> 
       <p class="resume-content">Apr. 2017 - Present</p>
-      <p>• My work involves both backend and frontend, contact me to learn more about me. </p>
+      <p>• My work involves both backend(mostly) and frontend, contact me to learn more about me. </p>
     </div>
       <div class="divider"></div>
       <div class="section">
@@ -193,7 +132,7 @@
   
 
   <br>
-  <h3 class="center-align collection-header" id="projects_div"><i class="material-icons">class</i>Projects</h3>
+  <h3 class="center-align collection-header" id="past_projects"><i class="material-icons">class</i>Past Projects</h3>
   <div class="divider"></div>
   <div class="container">
     <div class="masonry">
@@ -400,30 +339,29 @@
   <!-- </li> -->
  
 
- <footer class="page-footer light-blue lighten-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Thanks for visiting my page!</h5>
-                <p class="grey-text text-lighten-4">If you have some great opportunities that fit me, please contact me!</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Connect socially with Di</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/di.zhu.102">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cudizhu">Linkedin</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/dz2311">Github</a></li>
-                  <li><a class="grey-text text-lighten-3" href="mailto:dz2311@columbia.edu">Email</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright light-blue lighten-2">
-            <div class="container">
-            © Di Zhu 2018 - Los Angeles, CA, 90064. 
-            <a class="grey-text text-lighten-4 right" href="mailto:dz2311@columbia.edu">Email: dz2311@columbia.edu</a>
-            </div>
-          </div>
-        </footer>  
+  <footer class="footer-color">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="footer-header-color">Thanks for visiting my page!</h5>
+          <p class="footer-content-color">If you have some great opportunities that fit me, please contact me!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="footer-header-color">Connect socially with Di</h5>
+          <ul>
+            <li><a class="footer-content-color" href="https://www.facebook.com/di.zhu.102">Facebook</a></li>
+            <li><a class="footer-content-color" href="https://www.linkedin.com/in/cudizhu">Linkedin</a></li>
+            <li><a class="footer-content-color" href="https://github.com/dz2311">Github</a></li>
+            <li><a class="footer-content-color" href="mailto:dz2311@columbia.edu">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright footer-copyright-color">
+      <div class="container center-align white-text">
+      © Di Zhu 2018 - Los Angeles, CA, 90064. 
+      </div>
+    </div>
+  </footer>  
 </body>
 </html>

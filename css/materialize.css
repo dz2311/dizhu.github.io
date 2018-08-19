@@ -8362,3 +8362,65 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+.footer-color {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #f0edeb;
+}
+
+.footer-header-color {
+  color: #846C63;
+}
+
+.footer-content-color {
+  color: #88AAA9;
+}
+
+.footer-copyright-color {
+  color: rgba(255,255,255,0.8);
+  background-color: rgba(51,51,51,0.08);
+  padding: 10px;
+}
+
+.topnav {
+  font-size: 14px;
+}
+
+.navbar-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.nav-main-container {
+  display: inline;
+  font-size: 16px;
+  color: #000000;
+}
+
+.nav-button-container {
+  display: inline;
+}
+
+ul .nav-menu {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.nav-content-color {
+  color: #000000;
+}
+
